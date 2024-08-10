@@ -1,37 +1,42 @@
-import React, { useRef } from "react";
-
-import { Container, Row, Col } from "reactstrap";
+import React, { useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Col, Container, Row } from "reactstrap";
 import "../../styles/header.css";
 
-const navLinks = [
-  {
-    path: "/home",
-    display: "Home",
-  },
-  {
-    path: "/about",
-    display: "About",
-  },
-  {
-    path: "/cars",
-    display: "Cars",
-  },
+// Example items to search through
+const itemsList = [
+  { name: "Water Service", path: "/cars" },
+  { name: "Tyre Replacement", path: "/cars" },
+  { name: "Oil Filling", path: "/cars" },
+  // Add more items as needed
+];
 
-  {
-    path: "/blogs",
-    display: "Blog",
-  },
-  {
-    path: "/contact",
-    display: "Contact",
-  },
+const navLinks = [
+  { path: "/home", display: "Home" },
+  { path: "/about", display: "About" },
+  { path: "/cars", display: "Services" },
+  { path: "/blogs", display: "Blog" },
+  { path: "/contact", display: "Contact" },
+  { path: "/login", display: "Login" },
+  { path: "/signup", display: "Signup" },
 ];
 
 const Header = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredItems, setFilteredItems] = useState([]);
   const menuRef = useRef(null);
 
   const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+
+  const handleSearchChange = (event) => {
+    const query = event.target.value.toLowerCase();
+    setSearchQuery(query);
+
+    const filtered = itemsList.filter((item) =>
+      item.name.toLowerCase().includes(query)
+    );
+    setFilteredItems(filtered);
+  };
 
   return (
     <header className="header">
@@ -43,19 +48,19 @@ const Header = () => {
               <div className="header__top__left">
                 <span>Need Help?</span>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +1-202-555-0149
+                  <i className="ri-phone-fill"></i> +91 7904589582
                 </span>
               </div>
             </Col>
 
             <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-                <Link to="#" className=" d-flex align-items-center gap-1">
-                  <i class="ri-login-circle-line"></i> Login
+                <Link to="/login">
+                  <i className="ri-login-circle-line"></i> Login
                 </Link>
 
-                <Link to="#" className=" d-flex align-items-center gap-1">
-                  <i class="ri-user-line"></i> Register
+                <Link to="/signup">
+                  <i className="ri-user-line"></i> Register
                 </Link>
               </div>
             </Col>
@@ -70,10 +75,10 @@ const Header = () => {
             <Col lg="4" md="3" sm="4">
               <div className="logo">
                 <h1>
-                  <Link to="/home" className=" d-flex align-items-center gap-2">
-                    <i class="ri-car-line"></i>
+                  <Link to="/home" className="d-flex align-items-center gap-2">
+                    <i className="ri-car-line animate__car"></i>
                     <span>
-                      Rent Car <br /> Service
+                      Wheel <br /> Bro
                     </span>
                   </Link>
                 </h1>
@@ -83,11 +88,11 @@ const Header = () => {
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
                 <span>
-                  <i class="ri-earth-line"></i>
+                  <i className="ri-earth-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Bangladesh</h4>
-                  <h6>Sylhet City, Bangladesh</h6>
+                  <h4>Coimbatore</h4>
+                  <h6>Coimbatore, Tamilnadu</h6>
                 </div>
               </div>
             </Col>
@@ -95,11 +100,11 @@ const Header = () => {
             <Col lg="3" md="3" sm="4">
               <div className="header__location d-flex align-items-center gap-2">
                 <span>
-                  <i class="ri-time-line"></i>
+                  <i className="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Sunday to Friday</h4>
-                  <h6>10am - 7pm</h6>
+                  <h4>Sunday to Saturday</h4>
+                  <h6>10am - 10pm</h6>
                 </div>
               </div>
             </Col>
@@ -108,11 +113,11 @@ const Header = () => {
               lg="2"
               md="3"
               sm="0"
-              className=" d-flex align-items-center justify-content-end "
+              className="d-flex align-items-center justify-content-end"
             >
-              <button className="header__btn btn ">
+              <button className="header__btn btn">
                 <Link to="/contact">
-                  <i class="ri-phone-line"></i> Request a call
+                  <i className="ri-phone-line"></i> Request a Service
                 </Link>
               </button>
             </Col>
@@ -121,12 +126,11 @@ const Header = () => {
       </div>
 
       {/* ========== main navigation =========== */}
-
       <div className="main__navbar">
         <Container>
           <div className="navigation__wrapper d-flex align-items-center justify-content-between">
             <span className="mobile__menu">
-              <i class="ri-menu-line" onClick={toggleMenu}></i>
+              <i className="ri-menu-line" onClick={toggleMenu}></i>
             </span>
 
             <div className="navigation" ref={menuRef} onClick={toggleMenu}>
@@ -147,10 +151,31 @@ const Header = () => {
 
             <div className="nav__right">
               <div className="search__box">
-                <input type="text" placeholder="Search" />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                />
                 <span>
-                  <i class="ri-search-line"></i>
+                  <i className="ri-search-line"></i>
                 </span>
+                {/* Display search results */}
+                {searchQuery && (
+                  <div className="search__results">
+                    {filteredItems.length > 0 ? (
+                      <ul>
+                        {filteredItems.map((item, index) => (
+                          <li key={index}>
+                            <Link to={item.path}>{item.name}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>No results found</p>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </div>

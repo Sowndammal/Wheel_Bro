@@ -1,0 +1,10 @@
+/* src/AdminPanel.css */
+.admin-panel {
+  display: flex;
+}
+
+.admin-panel__content {
+  flex: 1; /* Takes up the remaining space */
+  margin-left: 250px; /* Same width as the navbar */
+  padding: 20px;
+}

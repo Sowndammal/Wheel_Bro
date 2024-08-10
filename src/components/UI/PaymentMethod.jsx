@@ -1,41 +1,78 @@
-import React from "react";
-
+import React, { useState } from "react";
 import masterCard from "../../assets/all-images/master-card.jpg";
 import paypal from "../../assets/all-images/paypal.jpg";
 import "../../styles/payment-method.css";
 
-const PaymentMethod = () => {
+const PaymentMethod = ({ serviceAmount }) => {
+  const [selectedMethod, setSelectedMethod] = useState('');
+  const [totalAmount, setTotalAmount] = useState(serviceAmount);
+
+  const handlePaymentChange = (event) => {
+    setSelectedMethod(event.target.value);
+  };
+
+  const handleReserveNow = () => {
+    if (!selectedMethod) {
+      alert('Please select a payment method.');
+      return;
+    }
+    alert(`Payment Method: ${selectedMethod}\nTotal Amount: $${totalAmount}`);
+  };
+
   return (
     <>
       <div className="payment">
-        <label htmlFor="" className="d-flex align-items-center gap-2">
-          <input type="radio" /> Direct Bank Transfer
+        <label className="d-flex align-items-center gap-2">
+          <input 
+            type="radio" 
+            name="payment-method" 
+            value="Direct Bank Transfer"
+            onChange={handlePaymentChange}
+          /> 
+          Direct Bank Transfer
         </label>
       </div>
 
       <div className="payment mt-3">
-        <label htmlFor="" className="d-flex align-items-center gap-2">
-          <input type="radio" /> Cheque Payment
+        <label className="d-flex align-items-center gap-2">
+          <input 
+            type="radio" 
+            name="payment-method" 
+            value="Cheque Payment"
+            onChange={handlePaymentChange}
+          /> 
+          Cheque Payment
         </label>
       </div>
 
       <div className="payment mt-3 d-flex align-items-center justify-content-between">
-        <label htmlFor="" className="d-flex align-items-center gap-2">
-          <input type="radio" /> Master Card
+        <label className="d-flex align-items-center gap-2">
+          <input 
+            type="radio" 
+            name="payment-method" 
+            value="Master Card"
+            onChange={handlePaymentChange}
+          /> 
+          Master Card
         </label>
-
-        <img src={masterCard} alt="" />
+        <img src={masterCard} alt="Master Card" />
       </div>
 
       <div className="payment mt-3 d-flex align-items-center justify-content-between">
-        <label htmlFor="" className="d-flex align-items-center gap-2">
-          <input type="radio" /> Paypal
+        <label className="d-flex align-items-center gap-2">
+          <input 
+            type="radio" 
+            name="payment-method" 
+            value="Paypal"
+            onChange={handlePaymentChange}
+          /> 
+          Paypal
         </label>
-
-        <img src={paypal} alt="" />
+        <img src={paypal} alt="Paypal" />
       </div>
+
       <div className="payment text-end mt-5">
-        <button>Reserve Now</button>
+        <button onClick={handleReserveNow}>Reserve Now</button>
       </div>
     </>
   );

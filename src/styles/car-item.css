@@ -1,25 +1,33 @@
 .car__item {
-  border: 1px solid #7c8a9736;
-  padding: 20px;
-  border-radius: 5px;
+  border: 1px solid black;
+  padding: 40px;
+  border-radius: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.car__item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .car__item-info span i {
-  color: #f9a826;
+  color: #47c5f3;
   font-size: 1.1rem;
 }
 
 .car__item-btn {
   border-radius: 0;
-  border: none;
+  border:0.5px solid grey;
   outline: none;
-  background: #000d6b;
+  background: #47c5f3;
+
   padding: 8px 0px;
 }
 
 .car__item-btn a {
   text-decoration: none;
-  color: #fff;
+  color:black;
   font-weight: 500;
 }
 
@@ -27,7 +35,7 @@
   color: #fff;
 }
 .car__btn-details {
-  background: #f9a826;
+  background: white;
   border-radius: 0px 4px 4px 0px;
 }
 
@@ -46,7 +54,7 @@
 
 @media only screen and (max-width: 992px) {
   .car__item h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 0;
   }
 
@@ -60,7 +68,7 @@
   }
 
   .car__item-info span {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     justify-content: space-between;
   }
 
@@ -90,4 +98,17 @@
   .car__item-btn {
     font-size: 0.8rem;
   }
+}
+
+.car__btn-add-to-cart {
+  background-color: #47c5f3;
+  color:black;
+  border: none;
+  padding:10px;
+  border-radius:0px 8px;
+}
+
+.car__btn-add-to-cart:hover {
+  background-color: white;
+  color:black;
 }

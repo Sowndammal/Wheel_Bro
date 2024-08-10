@@ -1,46 +1,43 @@
 // import images from all-images/blog-img directory
-import img01 from "../all-images/blog-img/blog-1.jpg";
-import img02 from "../all-images/blog-img/blog-2.jpg";
-import img03 from "../all-images/blog-img/blog-3.jpg";
 
 const blogData = [
   {
     id: 1,
-    title: "The best way to drive cars",
-    author: "Muhib",
-    date: "12 Dec, 2020",
+    title: "The best way to Service your vehicle",
+    author: "Customer",
+    date: "12 July, 2024",
     time: "9pm",
-    imgUrl: img01,
+    imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqLAu-VXRitL5iWbdvlap_rLJKJnlFIksXKw&s",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The days of endless phone calls and long waits for appointments are over.Wheel Bro offers a user-friendly platform that allows you to schedule and manage your vehicle’s maintenance with ease. Whether you’re at home, at work, or on the go, our system provides a convenient way to keep your vehicle in top condition without disrupting your busy schedule.",
     quote:
-      "Voluptua dolore takimata dolor sadipscing nonumy consetetur et. Stet sed dolores dolores dolores dolores eos.",
+      "Feel free to tailor the blog to better fit the specifics of your service system and the tone of your brand!",
   },
 
   {
     id: 2,
-    title: "If your car battery is down",
-    author: "Muhib",
-    date: "12 Dec, 2020",
+    title: "Total Repair",
+    author: "Customer",
+    date: "12 July, 2024",
     time: "9pm",
-    imgUrl: img02,
+    imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYdWxNvbT6XFljUEP53gdGnKrxtEPX7H8czw&s",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The days of endless phone calls and long waits for appointments are over.Wheel Bro offers a user-friendly platform that allows you to schedule and manage your vehicle’s maintenance with ease. Whether you’re at home, at work, or on the go, our system provides a convenient way to keep your vehicle in top condition without disrupting your busy schedule.",
     quote:
-      "Voluptua dolore takimata dolor sadipscing nonumy consetetur et. Stet sed dolores dolores dolores dolores eos.",
+      "Feel free to tailor the blog to better fit the specifics of your service system and the tone of your brand!",
   },
 
   {
     id: 3,
-    title: "The best way to give trip",
-    author: "Muhib",
-    date: "12 Dec, 2020",
+    title: "Easy to Access and safer side",
+    author: "Customer",
+    date: "23 July, 2024",
     time: "9pm",
-    imgUrl: img03,
+    imgUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJwqwkmwJRaUgLRA41xZsMHLJZ4a0iAcFq7zbiV2sipXi10Gl1to82tsH4x-FXlgNbC8&usqp=CAU",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.  Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Technology is at the heart of what we do. Our service system utilizes advanced diagnostic tools to provide accurate and timely information about your vehicle’s condition. This technology not only helps in diagnosing issues more efficiently but also keeps you informed about the status of your vehicle, ensuring transparency and trust. ",
     quote:
-      "Voluptua dolore takimata dolor sadipscing nonumy consetetur et. Stet sed dolores dolores dolores dolores eos.",
+      "Feel free to tailor the blog to better fit the specifics of your service system and the tone of your brand!",
   },
 ];
 

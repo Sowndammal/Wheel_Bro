@@ -1,50 +1,47 @@
 import React from "react";
-import "../../styles/our-member.css";
-import { Col } from "reactstrap";
 import { Link } from "react-router-dom";
-import ava01 from "../../assets/all-images/ava-1.jpg";
-import ava02 from "../../assets/all-images/ava-2.jpg";
-import ava03 from "../../assets/all-images/ava-3.jpg";
+import { Col } from "reactstrap";
+import "../../styles/our-member.css";
 
 const OUR__MEMBERS = [
   {
-    name: "Jhon Doe",
-    experience: "5 years of experience",
+    name: "Car 24",
+    experience: "All in one on cars",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava01,
+    imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR_-k0U-meDId8ekch0kgbNZ9aoGgdEkRufZblXLfhO0edNmB3r6QUeSct-_woJVNK97w&usqp=CAU",
   },
 
   {
-    name: "David Lisa",
-    experience: "5 years of experience",
+    name: "Bike and Car Service",
+    experience: "Full Service",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava02,
+    imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_TGT-blBQPJ4O-sT1k3CjMDJIxjM_poKjdoGJKWZ7x8XF4-Lf3Y88bnixermaMfznsik&usqp=CAU",
   },
 
   {
-    name: "Hilton King",
-    experience: "5 years of experience",
+    name: "H and m Service",
+    experience: "Bike and Car service",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava03,
+    imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmGqQmeUeS6sLSk_PJBZYKDl-ILn6ZLH9nrw3XAYwZTu2QKQKUoYDHrnA3ORqctnDi-hg&usqp=CAU",
   },
 
   {
-    name: "Jhon Doe",
-    experience: "5 years of experience",
+    name: "car Garrage",
+    experience: "Full service",
     fbUrl: "#",
     instUrl: "#",
     twitUrl: "#",
     linkedinUrl: "#",
-    imgUrl: ava01,
+    imgUrl: "https://media.istockphoto.com/id/817262602/vector/car-service-and-repair-center-or-garage-with-worker.jpg?s=612x612&w=is&k=20&c=RC_j6XQ2XzBcwBc5W8iNeXmsOgmkbmCVrcxCucG0Z58=",
   },
 ];
 

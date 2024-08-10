@@ -1,19 +1,19 @@
 .slider__item {
-  max-width: 100%;
-  height: 650px;
+  max-width: 100;
+  height: 700px;
 }
 
 .slider__item-01 {
-  background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
-    url("../assets/all-images/slider-img/slider-1.jpg");
+  background:linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
+    url("https://i.pinimg.com/originals/6d/c4/69/6dc469269b4479178d2be3304ccf4c1a.gif");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
 }
 
 .slider__item-02 {
   background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
-    url("../assets/all-images/slider-img/slider-2.jpg");
+    url("https://i.pinimg.com/originals/6d/c4/69/6dc469269b4479178d2be3304ccf4c1a.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@
 
 .slider__item-03 {
   background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
-    url("../assets/all-images/slider-img/slider-3.jpg");
+url("https://i.pinimg.com/originals/6d/c4/69/6dc469269b4479178d2be3304ccf4c1a.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@
 
 .reserve__btn {
   background: #fff !important;
-  color: #000d6b !important;
+  color: #47c5f3;
   border: none;
   outline: none;
 }
@@ -50,12 +50,12 @@
 .reserve__btn a {
   text-decoration: none;
   font-weight: 600;
-  color: #000d6b;
+  color: black;
 }
 
 .reserve__btn:hover {
-  background: #000d6b;
-  color: #fff;
+  background: #47c5f3;
+  color: black;
 }
 
 @media only screen and (max-width: 992px) {
@@ -82,3 +82,75 @@
     font-size: 1.5rem;
   }
 }
+/* General styles for the slider items */
+.slider__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* Add transition effect for slider content */
+.slider__content h3, 
+.slider__content h1 {
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.slider__item:hover .slider__content h3,
+.slider__item:hover .slider__content h1 {
+  transform: translateY(-10px);
+  color: #ff0; /* Optional: change text color on hover */
+}
+
+/* Hover effect for the button */
+.reserve__btn {
+  position: relative;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.reserve__btn:hover {
+  background-color: #0056b3; /* Darker shade of primary color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.reserve__btn a {
+  color: #fff; /* Ensure text is white on the button */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Add an overlay effect */
+.slider__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.slider__item:hover::before {
+  opacity: 1;
+}
+
+/* Add text decoration effects */
+.slider__content a {
+  color: #007bff; /* Default link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.slider__content a:hover {
+  color: #ff6347; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+

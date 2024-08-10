@@ -1,13 +1,17 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "../pages/Home";
+import { Navigate, Route, Routes } from "react-router-dom";
+import AdminDashboard from "../AdminDashboard";
+import AdminHome from "../AdminHome";
+import Login from "../Login";
+import Signup from "../Signup";
 import About from "../pages/About";
-import CarListing from "../pages/CarListing";
-import CarDetails from "../pages/CarDetails";
 import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
-import NotFound from "../pages/NotFound";
+import CarDetails from "../pages/CarDetails";
+import CarListing from "../pages/CarListing";
 import Contact from "../pages/Contact";
+import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 
 const Routers = () => {
   return (
@@ -20,6 +24,14 @@ const Routers = () => {
       <Route path="/blogs" element={<Blog />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+
+      {/* Admin Routes */}
+      <Route path="/dashboard" element={<AdminDashboard />} />
+      <Route path="/admin" element={<AdminHome />} />
+      
+      {/* Catch-All Route */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

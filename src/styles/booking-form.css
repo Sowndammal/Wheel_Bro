@@ -1,26 +1,47 @@
 .booking__form {
   width: 47.5%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 10px; /* Optional: adds rounded corners */
 }
+
+/* Hover effect */
+.booking__form:hover {
+  transform: scale(1.02); /* Slightly enlarges the form */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  background-color: #f8f8f8; /* Changes background color on hover */
+}
+
 
 .booking__form input {
   padding: 8px 15px;
-  border: 1px solid #7c8a972a;
-  color: #7c8a97;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: black;
   width: 100%;
 }
 
 .booking__form select,
-.textarea {
+.booking__form .textarea {
   width: 100%;
   padding: 10px 15px;
-  color: #7c8a97;
-  border: 1px solid #7c8a972a;
-  border-radius: 4px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for select and textarea */
+.booking__form select:hover,
+.booking__form .textarea:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  border-color: #007bff; /* Change border color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
 .time__picker::before {
-  content: "Journey Time";
-  color: #7c8a97;
+  content: "Avail Time";
+  color: black;
   margin-right: 0.5rem;
 }
 
@@ -38,6 +59,40 @@
   .booking__form input,
   .textarea,
   .booking__form select {
-    font-size: 0.8rem;
+    font-size: 1;
   }
 }
+/* booking-form.css */
+.booking__form {
+  margin-bottom: 1rem;
+}
+
+.booking__form input,
+.booking__form select,
+.booking__form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking__btn {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking__btn:hover {
+  background-color: #c2185b;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+

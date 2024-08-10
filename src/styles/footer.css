@@ -1,11 +1,11 @@
 .footer {
-  background: #000d6b;
+  background: #47c5f3;
   padding-top: 50px;
   padding-bottom: 15px;
 }
 
 .footer__logo i {
-  color: #fff;
+  color:black;
   font-weight: 400;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .footer__logo-content {
-  color: rgba(255, 255, 255, 0.715);
+  color:black;
   margin-top: 15px;
   line-height: 30px;
 }
@@ -26,14 +26,14 @@
 }
 
 .quick__link a {
-  color: rgba(255, 255, 255, 0.715);
+  color: black;
   text-decoration: none;
   font-weight: 300;
   transition: 0.3s;
 }
 
 .quick__link a:hover {
-  color: #f9a826;
+  color: #47c5f3;
 }
 
 .footer__link-title {
@@ -41,7 +41,7 @@
 }
 
 .office__info {
-  color: rgba(255, 255, 255, 0.715);
+  color:black;
   font-weight: 300;
 }
 
@@ -50,24 +50,24 @@
   align-items: center;
   justify-content: space-between;
   padding: 8px 12px;
-  border: 1px solid #7c8a972f;
+  border: 1px solid black;
   border-radius: 50px;
-  background: #020a4de9;
+  background: white;
 }
 
 .newsletter input {
   background: transparent;
-  color: #fff;
+  color: white;
   border: none;
   outline: none;
 }
 
 .newsletter span i {
-  color: #fff;
+  color: black;
 }
 
 .footer__bottom {
-  border-top: 1px solid #7c8a972f;
+  border-top: 1px solid black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -92,3 +92,59 @@
 
   
 }
+/* Footer logo content styling */
+.footer__logo-content {
+  color:black; /* Light gray text */
+  font-size: 14px; /* Small font size */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+/* Change color on hover */
+.footer__logo-content:hover {
+  color: white; /* Darker text color on hover */
+}
+
+/* Animation for car icon */
+.animate__car {
+  animation: bounce 1s; /* Apply bounce animation */
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up slightly at the midpoint */
+  }
+}
+
+/* Quick links hover effect */
+.quick__link a:hover {
+  color: white; /* Change color to orange on hover */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Newsletter input field styling */
+.newsletter input.email-input {
+  border: none; /* Remove default border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 8px 16px; /* Padding inside the input */
+  width: 70%; /* Default width */
+  transition: width 0.3s ease-in-out; /* Smooth width transition on focus */
+}
+
+/* Expand input width on focus */
+.newsletter input.email-input:focus {
+  outline: none; /* Remove default outline */
+  width: 80%; /* Expand width on focus */
+}
+
+/* Hover effect for send icon */
+.newsletter .send-icon:hover {
+  color: #ff6200; /* Change color to orange on hover */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+
+

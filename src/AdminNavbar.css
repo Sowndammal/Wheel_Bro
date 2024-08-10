@@ -1,0 +1,33 @@
+.admin-navbar {
+  width: 250px;
+  background-color: #343a40;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-navbar h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.admin-navbar__list {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-navbar__list li {
+  margin-bottom: 15px;
+}
+
+.admin-navbar__list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.admin-navbar__list li a.active {
+  font-weight: bold;
+  color: #17a2b8;
+}

@@ -1,28 +1,29 @@
 .blog__item {
-  border: 1px solid #7c8a972e;
+  border: 1px solid black;
+  border-radius: 30px;
 }
 
 .blog__time {
-  border-top: 1px solid #7c8a972e;
+  border-top: 1px solid #47c5f3;
 }
 
 .read__more {
-  color: #f9a826;
+  color: #47c5f3;
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
 }
 
 .read__more:hover {
-  color: #f9a826;
+  color:black;
 }
 
 .blog__time span i {
-  color: #f9a826;
+  color: #47c5f3;
 }
 
 .blog__author {
-  color: #000d6b;
+  color: #47c5f3;
   font-weight: 600;
 }
 
@@ -32,14 +33,14 @@
 
 .blog__title {
   text-decoration: none;
-  color: #000d6b;
+  color: #47c5f3;
   font-size: 1.2rem;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.3sk;
 }
 
 .blog__title:hover {
-  color: #f9a826;
+  color: black;
 }
 
 @media only screen and (max-width: 768px) {
@@ -52,13 +53,13 @@
   }
 
   .blog__info p {
-    font-size: 0.7rem;
-    line-height: 1.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
     margin-top: 10px;
   }
 
   .blog__title {
-    font-size: 1.1rem;
+    font-size: 2rem;
   }
 
   .read__more {

@@ -1,7 +1,7 @@
 .header__top {
   padding: 10px 0px;
-  background: #000d6b;
-  color: #fff;
+  background: #47c5f3;
+  color: black;
 }
 
 .header__top__left {
@@ -21,8 +21,8 @@
 }
 
 .header__top__help i {
-  background: #fff;
-  color: #000d6b;
+  background: black;
+  color: #47c5f3;
   padding: 2px 4px;
   border-radius: 50px;
   font-size: 0.7rem;
@@ -30,12 +30,12 @@
 
 .header__top__right a {
   text-decoration: none;
-  color: #fff;
+  color:black;
   font-size: 0.9rem;
 }
 
 .header__top__right a:hover {
-  color: #fff;
+  color: white;
 }
 
 /* ============ header middle style =========== */
@@ -54,7 +54,7 @@
 
 .logo h1 a {
   text-decoration: none;
-  color: #000d6b;
+  color: black;
   font-weight: 700;
 }
 
@@ -64,13 +64,13 @@
 
 .header__location span i {
   font-size: 2.2rem;
-  color: #000d6b;
+  color: black;
 }
 
 .header__location-content h4 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #000d6b;
+  color: black;
 }
 
 .header__location-content h6 {
@@ -78,7 +78,7 @@
 }
 
 .header__btn {
-  background: #000d6b !important;
+  background: #47c5f3 !important;
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -96,18 +96,18 @@
 }
 
 .header__btn a:hover {
-  color: #fff;
+  color: black;
 }
 
 /* ================ main navbar styles =========== */
 
 .main__navbar {
   padding: 15px 0px;
-  background: #000d6b;
+  background: #47c5f3 ;
 }
 
 .mobile__menu i {
-  color: #fff;
+  color:black;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -123,29 +123,29 @@
 }
 
 .nav__item {
-  color: #fff;
+  color: black;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .nav__item:hover {
-  color: #f9a826;
+  color:white;
 }
 
 .search__box {
-  border: 1px solid #7c8a972f;
+  border: 1px solid black;
   padding: 7px 12px;
   display: flex;
   align-items: center;
   border-radius: 50px;
-  background: #020a4de9;
+  background: white;
 }
 
 .search__box input {
   background: transparent;
   border: none;
   outline: none;
-  color: #fff;
+  color: black;
   cursor: pointer;
 }
 
@@ -153,12 +153,12 @@
   font-size: 0.8rem;
 }
 .search__box span i {
-  color: rgba(255, 255, 255, 0.555);
+  color: black;
   cursor: pointer;
 }
 
 .nav__active {
-  color: #f9a826;
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -173,7 +173,7 @@
   }
 
   .navigation {
-    background: rgb(0, 13, 107, 0.6);
+    background: #47c5f3;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -186,7 +186,7 @@
   .menu {
     width: 250px;
     height: 100%;
-    background: #fff;
+    background: black;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -195,7 +195,7 @@
   }
 
   .menu a {
-    color: #000d6b;
+    color:black;
     font-weight: 600;
     font-size: 0.9rem;
   }
@@ -203,4 +203,74 @@
   .menu__active {
     display: block;
   }
+  .animate__car {
+    animation: bounce 1.5s;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 }
+.header {
+  position: relative; /* Ensure the search results are positioned relative to the header */
+}
+
+.search__box {
+  position: relative;
+  width: 250px; /* Adjust width if necessary */
+}
+
+.search__box input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.search__results {
+  position: absolute;
+  top: 40px; /* Position the dropdown just below the search box */
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.search__results ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search__results li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search__results li:hover {
+  background-color: #f9f9f9;
+}
+
+.search__results li:last-child {
+  border-bottom: none; /* Remove the border from the last item */
+}
+
+.search__results p {
+  padding: 10px;
+  color: #999;
+  text-align: center;
+  margin: 0;
+}
+

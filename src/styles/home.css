@@ -1,0 +1,38 @@
+.hero__form {
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero__form .form__row {
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .find__cars-left h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .find__cars-left h2:hover {
+    color: #007bff; /* Change this to your desired hover color */
+    transform: scale(1.05);
+  }
+  
+  .section__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .section__subtitle {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  

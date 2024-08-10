@@ -3,10 +3,6 @@ import Slider from "react-slick";
 
 import "../../styles/testimonial.css";
 
-import ava01 from "../../assets/all-images/ava-1.jpg";
-import ava02 from "../../assets/all-images/ava-2.jpg";
-import ava03 from "../../assets/all-images/ava-3.jpg";
-import ava04 from "../../assets/all-images/ava-4.jpg";
 
 const Testimonial = () => {
   const settings = {
@@ -42,17 +38,14 @@ const Testimonial = () => {
     <Slider {...settings}>
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        I've been using Wheel Bro for the past six months, and I can't recommend it highly enough. From the moment I started using their services, my experience has been nothing short of exceptional. The system’s intuitive interface makes scheduling appointments a breeze, and the real-time updates on my vehicle’s status keep me informed every step of the way.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava01} alt="" className="w-25 h-25 rounded-2" />
+          <img src="https://howtodrawforkids.com/wp-content/uploads/2023/04/how-to-draw-a-cartoon-human.jpg" alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Happy Customer</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -60,17 +53,14 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        What truly stands out is their commitment to reliability and customer satisfaction. Every service appointment has been punctual and thorough, with their technicians always going the extra mile to ensure my vehicle runs smoothly. The system’s comprehensive diagnostic tools have caught issues before they became serious problems, saving me both time and money.
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava02} alt="" className="w-25 h-25 rounded-2" />
+          <img src="https://howtodrawforkids.com/wp-content/uploads/2023/05/how-to-draw-a-cartoon-boy.jpg" alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Satisfied Customer</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -78,17 +68,14 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        Customer support is top-notch as well. Whenever I've had questions or needed assistance, their team has been responsive and helpful, demonstrating a genuine dedication to resolving any concerns
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava03} alt="" className="w-25 h-25 rounded-2" />
+          <img src="https://img.freepik.com/premium-vector/woman-cartoon-icon-avatar-people-person-human-theme-isolated-design-vector-illustration_25030-10955.jpg" alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Sweet One</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
@@ -96,17 +83,14 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        Overall,Wheell Bro has revolutionized the way I maintain my vehicle. It offers peace of mind knowing that my car is in capable hands and that I can trust the service I receive. If you're looking for a reliable and user-friendly vehicle service solution, I wholeheartedly recommend "Wheel Bro".
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
-          <img src={ava04} alt="" className="w-25 h-25 rounded-2" />
+          <img src="https://thumbs.dreamstime.com/b/cartoon-woman-icon-person-design-vector-graphic-concept-represented-isolated-flat-illustration-73697107.jpg" alt="" className="w-25 h-25 rounded-2" />
 
           <div>
-            <h6 className="mb-0 mt-3">Jhon Doe</h6>
+            <h6 className="mb-0 mt-3">Good One</h6>
             <p className="section__description">Customer</p>
           </div>
         </div>
